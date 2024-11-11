@@ -1,27 +1,27 @@
 [
   {
-    "id": "0",
-    "Prompt": "Welcome! Choose a path: ",
-    "1": "North",
-    "2": "South",
-    "3": "East",
-    "4": "West"
+    "path_id": "0",
+    "prompt": "Welcome! Choose a path: ",
+    "1": "Head to the North",
+    "2": "Shimmy to the South",
+    "3": "Eager to the East",
+    "4": "Waddle to the West"
   },
   {
-    "id": "1",
-    "Prompt": "You won!"
+    "path_id": "1",
+    "prompt": "You won!"
   },
   {
-    "id": "2",
-    "Prompt": "You lost!"
+    "path_id": "2",
+    "prompt": "You lost!"
   },
   {
-    "id": "3",
-    "Prompt": "You're lost!",
+    "path_id": "3",
+    "prompt": "You're lost!",
     "0": "Go back"
   },
   {
-    "id": "4",
-    "Prompt": "You lost again"
+    "path_id": "4",
+    "prompt": "You lost again"
   }
 ]
