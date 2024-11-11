@@ -22,6 +22,12 @@
   },
   {
     "path_id": "4",
-    "prompt": "You lost again"
+    "prompt": "You are in a frozen tundra",
+    "0": "Go back",
+    "5": "Keep going"
+  },
+  {
+    "path_id": "5",
+    "prompt": "You made it to a utopia"
   }
 ]
