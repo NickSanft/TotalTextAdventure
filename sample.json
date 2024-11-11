@@ -1,0 +1,27 @@
+[
+  {
+    "id": "0",
+    "Prompt": "Welcome! Choose a path: ",
+    "1": "North",
+    "2": "South",
+    "3": "East",
+    "4": "West"
+  },
+  {
+    "id": "1",
+    "Prompt": "You won!"
+  },
+  {
+    "id": "2",
+    "Prompt": "You lost!"
+  },
+  {
+    "id": "3",
+    "Prompt": "You're lost!",
+    "0": "Go back"
+  },
+  {
+    "id": "4",
+    "Prompt": "You lost again"
+  }
+]
