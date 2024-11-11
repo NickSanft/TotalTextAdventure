@@ -10,8 +10,8 @@ def load_json(file_name: str):
 
         for json_path in json_full:
             print(json_path)
-            path_id = json_path["path_id"]
-            prompt = json_path["prompt"]
+            path_id = json_path[RpgPath.ID_KEY]
+            prompt = json_path[RpgPath.PROMPT_KEY]
             routes = {}
             for key, value in json_path.items():
                 if key.isdigit():
@@ -24,23 +24,23 @@ def prompt_option(path: RpgPath):
     print(path.prompt)
     for key, value in path.routes.items():
         print(key, ": ", value)
-    result = input(path.prompt)
-    return result
+    input_result = input(path.prompt)
+    return input_result
 
 if __name__ == '__main__':
-    paths = load_json("sample.json")
+    available_paths = load_json(RpgPath.PATHS_LOCATION)
 
     path_to_go = 0
-    result = prompt_option(paths["0"])
+    result = prompt_option(available_paths["0"])
 
     running = True
     while running:
-        current_path = paths[result]
+        current_path = available_paths[result]
         if len(current_path.routes) == 0:
             print(current_path.prompt)
             running = False
         else:
-            result = prompt_option(paths[result])
+            result = prompt_option(available_paths[result])
 
 
 
